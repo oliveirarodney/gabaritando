@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1000.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllerView.CategoriasJogoViewController">
+   <children>
+      <GridPane layoutX="19.0" layoutY="12.0" prefHeight="492.0" prefWidth="963.0" style="-fx-background-color: transparent;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="961.0" minWidth="10.0" percentWidth="0.0" prefWidth="961.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="70.0" minHeight="70.0" percentHeight="0.0" prefHeight="70.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="400.0" minHeight="0.0" percentHeight="0.0" prefHeight="400.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Group GridPane.rowIndex="1">
+               <children>
+                  <VBox prefHeight="415.0" prefWidth="961.0">
+                     <children>
+                        <GridPane>
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="307.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="307.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="307.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="130.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <JFXButton fx:id="btnCategoriaCiencias" alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: D840A5;" text="Ciência" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="ATOM" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: #38003C;" text="Cinema" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="FILM_FRAMES" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: #146AFF;" text="Esporte" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="SOCCER" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: #247864;" text="Geografia" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="GLOBE_WITH_MERIDIANS" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: green;" text="Lógica" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <MaterialIconView fill="WHITE" glyphName="EXTENSION" size="60.0" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: F3B802;" text="História" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="CLASSICAL_BUILDING" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: #896541;" text="Literatura" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="BOOK" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: F95B04;" text="Música" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="MUSICAL_NOTE" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" onMouseClicked="#handleIniciarQuiz" prefHeight="130.0" prefWidth="307.0" style="-fx-background-color: red;" text="Série" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Century Gothic Bold" size="21.0" />
+                                 </font>
+                                 <graphic>
+                                    <EmojiOneView fill="WHITE" glyphName="TV" size="60.0" textAlignment="CENTER" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </Group>
+            <Pane prefHeight="70.0" prefWidth="850.0">
+               <children>
+                  <Label layoutX="301.0" layoutY="10.0" text="Escolha a categoria" textFill="#38003c">
+                     <font>
+                        <Font name="Century Gothic Bold" size="37.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

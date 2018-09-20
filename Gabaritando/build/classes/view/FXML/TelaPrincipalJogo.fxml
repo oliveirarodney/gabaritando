@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllerView.PrincipalJogoViewController">
+   <children>
+      <BorderPane fx:id="bpRoot" prefHeight="600.0" prefWidth="1200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="520.0" prefWidth="200.0" style="-fx-background-color: #295852;">
+               <children>
+                  <VBox prefHeight="453.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btnPerfil" alignment="BASELINE_LEFT" onMouseClicked="#handlePerfil" prefHeight="45.0" prefWidth="200.0" text="  Perfil" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="USER" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnJogar" alignment="BASELINE_LEFT" onMouseClicked="#handleJogar" prefHeight="45.0" prefWidth="200.0" text=" Jogar Quiz" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic Bold" size="18.0" />
+                           </font>
+                           <graphic>
+                              <MaterialDesignIconView fill="WHITE" glyphName="GOOGLE_CONTROLLER" size="25.0" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnSair" alignment="BASELINE_LEFT" layoutY="466.0" onMouseClicked="#handleSair" prefHeight="54.0" prefWidth="200.0" text=" Sair" textFill="WHITE" AnchorPane.bottomAnchor="0.0">
+                     <font>
+                        <Font name="Century Gothic Bold" size="18.0" />
+                     </font>
+                     <graphic>
+                        <MaterialDesignIconView fill="WHITE" glyphName="LOGOUT" size="25.0" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <StackPane fx:id="stkPaneCentral" prefHeight="520.0" prefWidth="769.0">
+               <children>
+                  <Pane prefHeight="520.0" prefWidth="769.0" />
+               </children>
+            </StackPane>
+         </center>
+         <right>
+            <StackPane fx:id="stkPaneDireita" prefHeight="520.0" prefWidth="231.0" />
+         </right>
+         <top>
+            <Pane prefHeight="80.0" prefWidth="1200.0" style="-fx-background-color: #38003C;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="344.0" layoutX="428.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../utils/imagens/Gabaritando.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

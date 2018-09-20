@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllerView.TelaPerfilViewController">
+   <children>
+      <GridPane layoutX="22.0" layoutY="14.0" prefHeight="492.0" prefWidth="956.0" style="-fx-background-color: transparent;">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="936.0" minWidth="10.0" percentWidth="0.0" prefWidth="936.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" percentWidth="0.0" prefWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="210.0" minHeight="210.0" percentHeight="0.0" prefHeight="210.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="282.0" minHeight="0.0" percentHeight="0.0" prefHeight="282.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="161.0" prefWidth="741.0" GridPane.columnIndex="1">
+               <children>
+                  <Pane prefHeight="210.0" prefWidth="936.0">
+                     <children>
+                        <JFXButton fx:id="btnEditarPerfil" alignment="CENTER" contentDisplay="CENTER" layoutX="768.0" layoutY="25.0" onMouseClicked="#handleEditarPerfil" prefHeight="43.0" prefWidth="169.0" style="-fx-background-color: #295852;" text="Editar Perfil" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </JFXButton>
+                        <Label fx:id="lblUserName" layoutX="31.0" layoutY="21.0" text="username" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="94.0" text="Email:" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblEmail" layoutX="88.0" layoutY="94.0" text="email@gabaritando.com.br" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="689.0" layoutY="158.0" text="Quizzes jogados:" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblQtdeQuizesPublicosJogados" layoutX="887.0" layoutY="158.0" text="0" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutY="199.0" prefHeight="5.0" prefWidth="936.0" style="-fx-background-color: #38003C;" />
+                        <Label layoutX="31.0" layoutY="158.0" prefHeight="23.0" prefWidth="265.0" text="Total de pontos acumulados:" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblTotalScore" layoutX="300.0" layoutY="158.0" prefHeight="23.0" prefWidth="77.0" text="0" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="127.0" text="Nome:" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblNome" layoutX="97.0" layoutY="127.0" text="gabaritando gabaritando" textFill="#38003c">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </Label>
+                        <JFXButton fx:id="btnExcluirConta" alignment="CENTER" contentDisplay="CENTER" layoutX="768.0" layoutY="84.0" onMouseClicked="#handleExcluirConta" prefHeight="43.0" prefWidth="169.0" style="-fx-background-color: RED;" text="Excluir Perfil" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Century Gothic" size="16.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </Pane>
+               </children>
+            </Pane>
+            <Group GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <GridPane layoutX="-22.0" layoutY="-1.0" maxWidth="936.0" prefHeight="30.0" prefWidth="936.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="312.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="312.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" percentWidth="0.0" prefWidth="312.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="lblQuizOrdenar" alignment="CENTER" prefHeight="30.0" prefWidth="312.0" text="Quiz" textFill="#295852">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblScoreOrdenar" alignment="CENTER" prefHeight="21.0" prefWidth="312.0" text="Score" textFill="#295852" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblCategoriaOrdenar" alignment="CENTER" prefHeight="21.0" prefWidth="312.0" text="Categoria" textFill="#295852" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Century Gothic Bold" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </GridPane>
+                  <ScrollPane focusTraversable="false" layoutX="-19.0" layoutY="37.0" prefHeight="251.0" prefWidth="936.0" style="-fx-background-color: #f4f4f4; -fx-border-color: #f4f4f4;">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <GridPane fx:id="gpQuizesJogados" layoutX="2.0" prefHeight="36.0" prefWidth="691.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" percentHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </Group>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane focusTraversable="true" prefHeight="520.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <Label alignment="CENTER" layoutX="369.0" layoutY="88.0" prefHeight="61.0" prefWidth="262.0" text="Score" textAlignment="CENTER" textFill="#295852">
+               <font>
+                  <Font name="Century Gothic Bold" size="46.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblScore" alignment="CENTER" layoutX="369.0" layoutY="149.0" prefHeight="89.0" prefWidth="262.0" text="0" textAlignment="CENTER" textFill="#295852">
+               <font>
+                  <Font name="Century Gothic Bold" size="68.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnJogarNovamente" layoutX="375.0" layoutY="264.0" onMouseClicked="#handleJogarNovamente" prefHeight="68.0" prefWidth="250.0" style="-fx-background-color: #295852;" text=" Jogar novamente" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ROTATE_LEFT" size="22.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="btnSair" layoutX="375.0" layoutY="365.0" onMouseClicked="#handleSair" prefHeight="68.0" prefWidth="250.0" style="-fx-background-color: #295852;" text=" Início" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="22.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="22.0" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
